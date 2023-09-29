@@ -1,12 +1,8 @@
-
-from selenium.webdriver.chrome.webdriver import WebDriver
-from selenium.webdriver.firefox.webdriver import WebDriver
-from pages.product_page import ProductPage
-from pages.login_page import LoginPage
-from pages.basket_page import BasketPage
-
 import pytest
 import time
+from pages.basket_page import BasketPage
+from pages.login_page import LoginPage
+from pages.product_page import ProductPage
 
 #Примет с параметризацией
 #@pytest.mark.parametrize('promo_offer', ["0","1", "3", "4", "5", "6", pytest.param("7", marks=pytest.mark.xfail), "8", "9"])
